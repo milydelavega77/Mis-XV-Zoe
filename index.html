@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi invitación</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <main class="invitacion">
+
+    <section class="portada">
+      <p class="pequeno">MIS XV</p>
+      <h1 class="nombre">ZOE</h1>
+      <p class="fecha">06 · 11 · 2026</p>
+      <button class="entrar" onclick="entrarInvitacion()">
+        INGRESAR
+      </button>
+    </section>
+
+    <section class="cuenta-regresiva">
+      <p class="pequeno">FALTAN</p>
+      <div class="contador">
+        <div class="tiempo"><span id="dias">00</span><small>Días</small></div>
+        <div class="tiempo"><span id="horas">00</span><small>Horas</small></div>
+        <div class="tiempo"><span id="minutos">00</span><small>Min</small></div>
+        <div class="tiempo"><span id="segundos">00</span><small>Seg</small></div>
+      </div>
+      <div class="frase-box">
+        <p>Dios fue tan bueno conmigo, y vos sos parte de esa bondad. Este momento significa mucho para mí, y quisiera que me acompañes en un día tan especial. 💚</p>
+      </div>
+    </section>
+
+    <section class="foto-calendario">
+      <img src="zoe3.jpeg" alt="Zoe" class="foto-cuenta">
+      <div class="calendario">
+        <p class="mes">NOVIEMBRE</p>
+        <div class="dias-semana">
+          <span>D</span><span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span>
+        </div>
+        <div class="grilla-dias">
+          <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+          <span class="dia-especial">6<span class="mariposa">🦋</span></span>
+          <span>7</span>
+          <span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span>
+          <span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span>
+          <span>22</span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</span><span>28</span>
+          <span>29</span><span>30</span>
+          <span class="vacio"></span><span class="vacio"></span><span class="vacio"></span>
+          <span class="vacio"></span><span class="vacio"></span>
+        </div>
+      </div>
+      <div class="hora">
+        <img src="https://i.postimg.cc/mDM0Lhhz/reloj.png" alt="Reloj 21:30" class="reloj-img">
+        <p>21:30 hs</p>
+      </div>
+    </section>
+
+    <section class="ubicacion">
+      <p class="pequeno">TE ESPERAMOS EN</p>
+      <h2>Oassis</h2>
+      <img src="oasis.jpeg" alt="Salón Oassis" class="foto-lugar">
+      <p class="direccion">Av. San Martín 969, Malvinas Argentinas, Córdoba</p>
+      <a href="https://maps.app.goo.gl/MyMKFMqEgb2Y45GK7?g_st=aw" target="_blank" class="btn-mapa">
+        VER UBICACIÓN
+      </a>
+    </section>
+
+    <section class="dress-code">
+      <p class="pequeno">DRESS CODE</p>
+      <h2 class="titulo-dress">Elegante Casual</h2>
+      <img src="https://i.postimg.cc/Y0JSZv4P/Zoe2.png" alt="Zoe" class="foto-dress">
+      <p class="detalle-dress">Vení cómoda/o, pero prolija/o. ¡Sumate a mi cumple con tu mejor look!</p>
+    </section>
+
+    <section class="regalo">
+      <p class="pequeno">REGALOS</p>
+      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGpjeW4wbHdkeWo5MG44ZTlxZGdpdzVjcmRmODE4b2gyeDRrNDg1byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4qaWgtMY9mpxNhEsSY/giphy.gif" alt="Regalo" class="gif-regalo">
+      <p class="texto-regalo">
+        Tu cariño y tu presencia ya son el regalo más lindo. Pero si querés tener un gesto con Zoe,
+        podés traer un presente el día del evento o, si preferís, hacerle una transferencia con estos datos:
+      </p>
+      <div class="alias-box">
+        <p class="alias-label">Alias</p>
+        <p class="alias-valor" id="alias">zoealmada.15</p>
+        <button class="btn-copiar" onclick="copiarAlias()">Copiar alias</button>
+      </div>
+      <p class="datos-extra">Titular: Zoe Agostina Almada Martinez</p>
+    </section>
+
+    <section class="galeria-qr">
+      <p class="pequeno">COMPARTÍ TUS FOTOS</p>
+      <p class="texto-qr">Escaneá el código y subí las fotos que saques en la fiesta, ¡así las tenemos todas juntas!</p>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://drive.google.com/drive/folders/1aNX-7ngMrWkCTabvq0XWccQ345Q_XVzb?usp=sharing" alt="QR para subir fotos" class="qr-img">
+    </section>
+
+    <section class="menu">
+      <p class="pequeno">MENÚ</p>
+      <img src="https://entrefiestas.com/imagen/blog/un-catering-para-fiestas-de-quince-anos-por-todo-lo-alto-1.jpg" alt="Menú" class="foto-menu">
+      <p class="texto-menu">
+        Vamos a tener opciones especiales para celíacos y vegetarianos.
+        Por favor, si necesitás alguna de estas opciones, aclaralo al confirmar tu asistencia,
+        ya que de lo contrario no vamos a poder garantizártela el día del evento.
+      </p>
+    </section>
+
+    <section class="reserva">
+      <p class="pequeno">RESERVÁ TU LUGAR</p>
+      <p class="texto-reserva">Para organizarnos mejor, te pedimos confirmar tu lugar con el pago correspondiente hasta el <strong>16 de octubre de 2026</strong>.</p>
+
+      <div class="precios-box">
+        <div class="precio-item">
+          <p class="precio-valor">$100.000</p>
+          <p class="precio-label">Adultos</p>
+        </div>
+        <div class="precio-item">
+          <p class="precio-valor">$54.000</p>
+          <p class="precio-label">Adolescentes (12 a 17 años)</p>
+        </div>
+        <div class="precio-item">
+          <p class="precio-valor">$48.000</p>
+          <p class="precio-label">Niños (4 a 11 años)</p>
+        </div>
+      </div>
+
+      <p class="texto-reserva">Podés abonar en efectivo o por transferencia:</p>
+      <div class="alias-box">
+        <p class="alias-label">Alias</p>
+        <p class="alias-valor">fiesta15.zoe</p>
+      </div>
+      <p class="datos-extra">Titular: Silvana Soledad Martinez</p>
+      <p class="texto-reserva">Una vez realizada la transferencia, envianos el comprobante al <strong>3517618380</strong>. 💚</p>
+    </section>
+
+    <section class="galeria">
+      <p class="pequeno">MOMENTOS</p>
+      <div class="tira-fotos">
+        <img src="https://i.postimg.cc/W4X1jWFJ/Zoe5.png" alt="Zoe" class="foto-tira bn">
+        <img src="https://i.postimg.cc/Z5PqsKJQ/Zoe4.png" alt="Zoe" class="foto-tira sepia">
+        <img src="https://i.postimg.cc/4dyN36VW/Zoe8.png" alt="Zoe" class="foto-tira color">
+        <img src="https://i.postimg.cc/6Q9pkJ35/Zoe6.png" alt="Zoe" class="foto-tira bn">
+        <img src="https://i.postimg.cc/QM0ds494/Zoe1.png" alt="Zoe" class="foto-tira sepia">
+      </div>
+    </section>
+
+    <section class="creditos">
+      <p class="mensaje-final">¡Te espero para celebrar juntos! 💚</p>
+      <p class="credito">M💝 351-7713956</p>
+    </section>
+
+  </main>
+
+  <audio id="musica-fondo" loop>
+  <source src="https://files.catbox.moe/r77kud.mp3" type="audio/mpeg">
+</audio>
+<button id="btn-musica" class="btn-musica">▶</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
